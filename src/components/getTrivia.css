@@ -1,0 +1,17 @@
+.trivia-form {
+    width: min-content;
+    height: min-content;
+    padding: 10rem;
+    border: solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.select-form {
+    height: 30px;
+    width: 180px;
+    margin: 10px;
+}
