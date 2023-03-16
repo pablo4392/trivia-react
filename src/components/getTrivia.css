@@ -1,17 +1,68 @@
+.trivia-container {
+    padding: 2rem;
+    border: solid 5px var(--formulary-color);
+    border-radius: 4rem;
+    background-color: rgba(240, 238, 237, 0.4);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-trivia {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    font-size: 35px;
+    color: var(--title-color);
+}
+
 .trivia-form {
-    width: min-content;
-    height: min-content;
-    padding: 10rem;
-    border: solid;
-    border-radius: 50%;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.select-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label{
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--inputs-color);
+}
+
 .select-form {
     height: 30px;
-    width: 180px;
-    margin: 10px;
+    width: 230px;
+    margin: 0 0 0 20px;
+    border: solid 3px;
+    border-radius: 10rem;
+    text-align: center;
+    font-size: 16px;
+    background-color: var(--select-background-color);
+    color: var(--inputs-color);
+}
+
+.button-form {
+    height: 45px;
+    width: 280px;
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--button-color);
+    border: solid 4px var(--button-color);
+    border-radius: 1rem;
+}
+
+.button-form:hover {
+    background-color: var(--button-color);
+    color: var(--formulary-color);
 }

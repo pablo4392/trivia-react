@@ -10,10 +10,10 @@ class Services {
         return categories
     }
 
-    static trivia(amount, categ, difficulty, typ) {
+    static trivia(amo, cat, dif, typ) {
         const promiseTrivia = axios({
             method: 'GET',
-            url: `https://opentdb.com/api.php?amount=${amount}&category=${categ}&difficulty=${difficulty}&type=${typ}`
+            url: `https://opentdb.com/api.php?amount=${amo}&category=${cat}&difficulty=${dif}&type=${typ}`
         })
 
         return promiseTrivia

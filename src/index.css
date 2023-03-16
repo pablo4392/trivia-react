@@ -1,5 +1,16 @@
+:root {
+  --formulary-color: #F7F1E5;
+  --title-color: #2C74B3;
+  --select-background-color: rgba(245, 237, 206, 0.7);
+  --inputs-color: #2C74B3;
+  --button-color: #0081C9;
+  --wallpaper: linear-gradient(to left bottom, #6096b4, #699eb9, #73a6be, #7cadc3, #86b5c8, #8dbdc9, #97c5ca, #a2cccb, #b4d4c9, #c9dbca, #dde2d0, #eee9da);
+  --reset-color-button: #DF2E38;
+  --reset-hover-button: #EDE9D5;
+}
+
 body {
-  background-image: linear-gradient(to right bottom, #000c8b, #004ebe, #0071ae, #008e70, #17a423);
+  background-image: var(--wallpaper);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -8,7 +19,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 code {
