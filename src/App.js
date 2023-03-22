@@ -1,8 +1,9 @@
 import './App.css';
 import {useForm} from "react-hook-form";
-import GetTrivia from './components/GetTrivia';
-import Services from './service/services';
 import { useEffect, useState } from 'react';
+import Services from './service/services';
+import GetTrivia from './components/GetTrivia';
+import CardContainer from './components/CardContainer'
 
 function App() {
   const {register, handleSubmit} = useForm();
@@ -23,7 +24,7 @@ function App() {
     if(questions){
       Services.trivia(questions, category, level, type)
         .then(promise => {
-          console.log(promise.data.results)
+          setDataTrivia(promise.data.results)
         })
     }
   }, [questions, category, level, type])
@@ -32,10 +33,11 @@ function App() {
     <div className="App">
       {dataTrivia ? (
         <>
+          <CardContainer questions={dataTrivia}/>
           <button className='cancel-button' onClick={() => setDataTrivia(null)}>Reset</button>
         </>
-        ):(
-        <GetTrivia register={register}  handleSubmit={handleSubmit(submit)}/>
+        ) : (
+          <GetTrivia register={register}  handleSubmit={handleSubmit(submit)}/>
       )}
     </div>
   );
